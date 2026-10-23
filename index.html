@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="tema-escuro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Tiburski | Desenvolvedor Full Stack</title>
+    
+    <!-- Google Fonts: Fonte 'Inter' para visual moderno e legível -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Ícones do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header class="cabecalho">
+        <div class="conteiner cabecalho-conteiner">
+            <a href="#inicio" class="logo">
+                &lt;Pedro<span>Tiburski</span> /&gt;
+            </a>
+
+            <!-- Menu de Navegação -->
+            <nav class="menu-navegacao" id="menu-navegacao">
+                <ul class="lista-menu">
+                    <li><a href="#inicio" class="link-menu active">Início</a></li>
+                    <li><a href="#sobre" class="link-menu">Sobre & Formação</a></li>
+                    <li><a href="#habilidades" class="link-menu">Habilidades</a></li>
+                    <li><a href="#portfolio" class="link-menu">Portfólio</a></li>
+                    <li><a href="#contato" class="link-menu">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="acoes-cabecalho">
+                <!-- Botão de Alternar Tema (Dark/Light) -->
+                <button id="botao-tema" class="botao-icone" aria-label="Alternar Tema">
+                    <i class="bi bi-moon-stars-fill" id="icone-tema"></i>
+                </button>
+
+                <!-- Botão Hambúrguer Mobile -->
+                <button id="botao-menu-mobile" class="botao-icone menu-mobile-btn" aria-label="Abrir Menu">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO HERO / APRESENTAÇÃO -->
+        <section id="inicio" class="secao-hero secao-animada">
+            <div class="conteiner hero-conteiner">
+                <div class="hero-conteudo">
+                    <span class="badge-boas-vindas">👋 Bem-vindo ao meu portfólio</span>
+                    <h1 class="titulo-principal">Olá, eu sou <span class="destaque-nome">Pedro Tiburski</span></h1>
+                    <h2 class="subtitulo-efeito">
+                        <span id="texto-maquina-escrever"></span><span class="cursor-maquina">|</span>
+                    </h2>
+                    <p class="descricao-hero">
+                        Estudante de Informática para Internet focado em criar interfaces modernas, interativas e acessíveis. Em busca da primeira oportunidade no mercado de tecnologia!
+                    </p>
+                    <div class="botoes-hero">
+                        <a href="curriculo.pdf" download class="botao botao-primario">
+                            <i class="bi bi-file-earmark-arrow-down-fill"></i> Baixar meu CV
+                        </a>
+                        <a href="#contato" class="botao botao-secundario">
+                            <i class="bi bi-chat-dots-fill"></i> Vamos Conversar?
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE MIM & EDUCAÇÃO -->
+        <section id="sobre" class="secao secao-animada">
+            <div class="conteiner">
+                <div class="cabecalho-secao">
+                    <h2 class="titulo-secao">Sobre Mim & Formação</h2>
+                    <p class="subtitulo-secao">Conheça minha trajetória e meu plano de estudos</p>
+                </div>
+
+                <div class="grid-sobre">
+                    <!-- Texto Sobre Mim -->
+                    <div class="card-padrao card-sobre">
+                        <div class="icone-card">
+                            <i class="bi bi-person-badge"></i>
+                        </div>
+                        <h3>Quem sou eu?</h3>
+                        <p>
+                            Sou estudante do 1º ano do Ensino Médio Técnico em Informática para Internet pela <strong>SESC Escola</strong>, em parceria com o <strong>SENAC</strong>. Com forte foco em programação, iniciei minha trilha de aprendizado me especializando em desenvolvimento Front-end.
+                        </p>
+                        <p>
+                            Nos próximos anos, minha formação se expandirá para o Back-end (2º ano) e desenvolvimento Mobile (3º ano), construindo uma base sólida para me tornar um Desenvolvedor Full Stack. Sou apaixonado por criar interfaces interativas e busco minha primeira oportunidade na área de tecnologia.
+                        </p>
+                    </div>
+
+                    <!-- Card de Formação Técnica (Glassmorphism) -->
+                    <div class="card-padrao card-educacao">
+                        <div class="cabecalho-educacao">
+                            <i class="bi bi-mortarboard-fill icone-graduacao"></i>
+                            <div>
+                                <h3>Ensino Médio Técnico em Informática para Internet</h3>
+                                <span class="instituicao">SESC ESCOLA / SENAC • Previsão de Conclusão: 2026</span>
+                            </div>
+                        </div>
+
+                        <h4 class="titulo-trilha">Trilha Técnica do Curso:</h4>
+                        
+                        <!-- Módulos da Trilha -->
+                        <div class="linha-tempo-trilha">
+                            <div class="modulo-item modulo-ativo">
+                                <div class="badge-modulo">
+                                    <i class="bi bi-code-slash"></i> Módulo 1 (Atual)
+                                </div>
+                                <h4>Desenvolvimento Front-end</h4>
+                                <p>Foco principal em HTML5, CSS3, JavaScript Vanilla, Lógica e Controle de Versão.</p>
+                            </div>
+
+                            <div class="modulo-item">
+                                <div class="badge-modulo">
+                                    <i class="bi bi-database"></i> Módulo 2 (Futuro)
+                                </div>
+                                <h4>Desenvolvimento Back-end</h4>
+                                <p>Estruturação de APIs, bancos de dados e regras de negócio para sistemas web.</p>
+                            </div>
+
+                            <div class="modulo-item">
+                                <div class="badge-modulo">
+                                    <i class="bi bi-phone"></i> Módulo 3 (Futuro)
+                                </div>
+                                <h4>Desenvolvimento Mobile</h4>
+                                <p>Criação de aplicativos para dispositivos móveis com foco em UX/UI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO HABILIDADES (HARD SKILLS) -->
+        <section id="habilidades" class="secao secao-animada">
+            <div class="conteiner">
+                <div class="cabecalho-secao">
+                    <h2 class="titulo-secao">Minhas Habilidades</h2>
+                    <p class="subtitulo-secao">Tecnologias e ferramentas que domino e utilizo no dia a dia</p>
+                </div>
+
+                <div class="grid-habilidades">
+                    <div class="card-habilidade">
+                        <i class="bi bi-filetype-html icone-habilidade html"></i>
+                        <h3>HTML5</h3>
+                        <p>Estruturação semântica e acessível para a web.</p>
+                    </div>
+
+                    <div class="card-habilidade">
+                        <i class="bi bi-filetype-css icone-habilidade css"></i>
+                        <h3>CSS3</h3>
+                        <p>Estilização moderna, Flexbox, Grid e layouts responsivos.</p>
+                    </div>
+
+                    <div class="card-habilidade">
+                        <i class="bi bi-filetype-js icone-habilidade js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Manipulação de DOM, requisições e interatividade dinâmicas.</p>
+                    </div>
+
+                    <div class="card-habilidade">
+                        <i class="bi bi-cpu icone-habilidade logica"></i>
+                        <h3>Lógica & Algoritmos</h3>
+                        <p>Resolução de problemas, estruturação de fluxos e Portugol.</p>
+                    </div>
+
+                    <div class="card-habilidade">
+                        <i class="bi bi-git icone-habilidade git"></i>
+                        <h3>Git</h3>
+                        <p>Controle de versão de código e histórico de commits.</p>
+                    </div>
+
+                    <div class="card-habilidade">
+                        <i class="bi bi-github icone-habilidade github"></i>
+                        <h3>GitHub</h3>
+                        <p>Hospedagem de repositórios, colaboração e GitHub Pages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PORTFÓLIO E ESTUDOS -->
+        <section id="portfolio" class="secao secao-animada">
+            <div class="conteiner">
+                <div class="cabecalho-secao">
+                    <h2 class="titulo-secao">Meu Portfólio & Estudos</h2>
+                    <p class="subtitulo-secao">Confira meus projetos desenvolvidos e repositórios de aprendizado</p>
+                </div>
+
+                <!-- SUBSEÇÃO A: PROJETOS DE DESTAQUE -->
+                <div class="subsecao-portfolio">
+                    <h3 class="titulo-subsecao"><i class="bi bi-star-fill"></i> Projetos de Destaque</h3>
+                    
+                    <div class="grid-projetos">
+                        <!-- Projeto 1 -->
+                        <article class="card-projeto">
+                            <div class="imagem-projeto-placeholder">
+                                <i class="bi bi-robot"></i>
+                                <span>projeto-robomaker</span>
+                            </div>
+                            <div class="conteudo-projeto">
+                                <h4 class="titulo-projeto">projeto-robomaker</h4>
+                                <p class="descricao-projeto">
+                                    Uma plataforma interativa desenvolvida para auxiliar na ideação e construção de objetos tecnológicos de forma intuitiva.
+                                </p>
+                                <div class="tags-tecnologias">
+                                    <span class="tag-tech">HTML5</span>
+                                    <span class="tag-tech">CSS3</span>
+                                </div>
+                                <div class="botoes-projeto">
+                                    <a href="https://nelson-67.github.io/projeto-robomaker/" target="_blank" class="botao-projeto botao-deploy">
+                                        <i class="bi bi-box-arrow-up-right"></i> Ver Demo
+                                    </a>
+                                    <a href="https://github.com/pedrotiburskilima-arch/projeto-robomaker" target="_blank" class="botao-projeto botao-repo">
+                                        <i class="bi bi-github"></i> Repositório
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Projeto 2 -->
+                        <article class="card-projeto">
+                            <div class="imagem-projeto-placeholder">
+                                <i class="bi bi-music-note-beamed"></i>
+                                <span>compasso-musical-1</span>
+                            </div>
+                            <div class="conteudo-projeto">
+                                <h4 class="titulo-projeto">compasso-musical-1</h4>
+                                <p class="descricao-projeto">
+                                    Loja virtual moderna criada para ajudar iniciantes no mundo da música a adquirirem o seu primeiro instrumento musical.
+                                </p>
+                                <div class="tags-tecnologias">
+                                    <span class="tag-tech">HTML5</span>
+                                    <span class="tag-tech">CSS3</span>
+                                </div>
+                                <div class="botoes-projeto">
+                                    <a href="https://nelson-67.github.io/compasso-musical/" target="_blank" class="botao-projeto botao-deploy">
+                                        <i class="bi bi-box-arrow-up-right"></i> Ver Demo
+                                    </a>
+                                    <a href="https://github.com/pedrotiburskilima-arch/compasso-musical-1" target="_blank" class="botao-projeto botao-repo">
+                                        <i class="bi bi-github"></i> Repositório
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- SUBSEÇÃO B: REPOSITÓRIOS DE ESTUDO -->
+                <div class="subsecao-portfolio">
+                    <h3 class="titulo-subsecao"><i class="bi bi-journal-code"></i> Repositórios de Estudo & Exercícios</h3>
+                    <p class="descricao-subsecao">Acompanhe minha evolução diária em sala de aula através dos códigos de treino:</p>
+
+                    <div class="grid-estudos">
+                        <!-- Repositório HTML/CSS -->
+                        <a href="https://github.com/pedrotiburskilima-arch/html" target="_blank" class="card-estudo">
+                            <div class="icone-estudo html-css-cor">
+                                <i class="bi bi-code-square"></i>
+                            </div>
+                            <div class="info-estudo">
+                                <h4>Trilha de HTML e CSS</h4>
+                                <p>Anotações, conceitos semânticos e exercícios práticos de estilização.</p>
+                            </div>
+                            <i class="bi bi-arrow-right seta-estudo"></i>
+                        </a>
+
+                        <!-- Repositório JavaScript -->
+                        <a href="https://github.com/pedrotiburskilima-arch/JavaScritp" target="_blank" class="card-estudo">
+                            <div class="icone-estudo js-cor">
+                                <i class="bi bi-filetype-js"></i>
+                            </div>
+                            <div class="info-estudo">
+                                <h4>Trilha de JavaScript Vanilla</h4>
+                                <p>Exercícios de manipulação do DOM, funções, eventos e lógica funcional.</p>
+                            </div>
+                            <i class="bi bi-arrow-right seta-estudo"></i>
+                        </a>
+
+                        <!-- Repositório Algoritmos -->
+                        <a href="https://github.com/pedrotiburskilima-arch/algoritmos" target="_blank" class="card-estudo">
+                            <div class="icone-estudo algoritmos-cor">
+                                <i class="bi bi-diagram-3-fill"></i>
+                            </div>
+                            <div class="info-estudo">
+                                <h4>Lógica e Algoritmos (Portugol)</h4>
+                                <p>Resolução de problemas, estruturas condicionais e laços de repetição.</p>
+                            </div>
+                            <i class="bi bi-arrow-right seta-estudo"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO / VAMOS CONVERSAR -->
+        <section id="contato" class="secao secao-animada">
+            <div class="conteiner">
+                <div class="cabecalho-secao">
+                    <h2 class="titulo-secao">Vamos Conversar?</h2>
+                    <p class="subtitulo-secao">Sinta-se à vontade para entrar em contato ou acompanhar minhas redes!</p>
+                </div>
+
+                <div class="grid-contatos">
+                    <!-- E-mail -->
+                    <a href="mailto:pedrotiburskilima@gmail.com" target="_blank" class="card-contato email">
+                        <div class="conteudo-contato">
+                            <i class="bi bi-envelope-at-fill icone-contato"></i>
+                            <div class="texto-contato">
+                                <h3>E-mail</h3>
+                                <span>pedrotiburskilima@gmail.com</span>
+                            </div>
+                        </div>
+                        <i class="bi bi-arrow-up-right-circle-fill icone-link"></i>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5565996633543" target="_blank" class="card-contato whatsapp">
+                        <div class="conteudo-contato">
+                            <i class="bi bi-whatsapp icone-contato"></i>
+                            <div class="texto-contato">
+                                <h3>WhatsApp</h3>
+                                <span>(65) 99663-3543</span>
+                            </div>
+                        </div>
+                        <i class="bi bi-arrow-up-right-circle-fill icone-link"></i>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/pedrotiburskilima-arch" target="_blank" class="card-contato github">
+                        <div class="conteudo-contato">
+                            <i class="bi bi-github icone-contato"></i>
+                            <div class="texto-contato">
+                                <h3>GitHub</h3>
+                                <span>@pedrotiburskilima-arch</span>
+                            </div>
+                        </div>
+                        <i class="bi bi-arrow-up-right-circle-fill icone-link"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/pdrx.tbk/" target="_blank" class="card-contato instagram">
+                        <div class="conteudo-contato">
+                            <i class="bi bi-instagram icone-contato"></i>
+                            <div class="texto-contato">
+                                <h3>Instagram</h3>
+                                <span>@pdrx.tbk</span>
+                            </div>
+                        </div>
+                        <i class="bi bi-arrow-up-right-circle-fill icone-link"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="conteiner rodape-conteiner">
+            <p>
+                Copyright &copy; <span id="ano-atual"></span> • Todos os direitos reservados.
+            </p>
+            <p class="desenvolvido-por">
+                Desenvolvido com <i class="bi bi-heart-fill icone-coracao"></i> por <strong>Pedro Tiburski</strong>
+            </p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button id="botao-topo" class="botao-topo" aria-label="Voltar ao topo">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Script JavaScript Vanilla -->
+    <script src="script.js"></script>
+</body>
+</html>

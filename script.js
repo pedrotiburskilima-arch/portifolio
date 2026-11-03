@@ -8,7 +8,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     /* ==========================================================================
-       1. CONTROLE DE ALTERNÂNCIA DE TEMA (DARK / LIGHT MODE)
+    1. CONTROLE DE ALTERNÂNCIA DE TEMA (DARK / LIGHT MODE)
        ========================================================================== */
     const botaoTema = document.getElementById("botao-tema");
     const iconeTema = document.getElementById("icone-tema");
